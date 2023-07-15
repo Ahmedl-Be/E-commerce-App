@@ -1,0 +1,96 @@
+*{
+    text-decoration: none;
+}
+.navbar {
+    height: 60px;
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .item {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        .link{
+            color: black;
+        }
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .center {
+            font-size: 30px;
+            letter-spacing: 2px;
+            .link{
+                color: black;
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .icons {
+                display: flex;
+                gap: 15px;
+                color: #777;
+                cursor: pointer;
+
+                .cartIcon {
+                    position: relative;
+
+                    span {
+                        font-size: 12px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: #2879fe;
+                        color: white;
+                        position: absolute;
+                        right: -10px;
+                        top: -10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1180px ) {
+    .item {
+        .link{
+            font-size: 10px;
+        }
+    }
+    .center{
+        .link{
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .navbar .wrapper .right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .navbar .wrapper .right .icons {
+        display: flex;
+        gap: 5px;
+        color: #777;
+        cursor: pointer;
+        margin: 5px 30px 0 10px;
+    }
+
+}
